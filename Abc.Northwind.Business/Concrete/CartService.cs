@@ -8,7 +8,7 @@ using System.Text;
 
 namespace Abc.Northwind.Business.Concrete
 {
-    public class CartManager : ICartService
+    public class CartService : ICartService
     {
         public void AddToCart(Cart cart, Product product)
         {
