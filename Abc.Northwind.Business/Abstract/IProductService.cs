@@ -7,7 +7,7 @@ namespace Abc.Northwind.Business.Abstract
 {
     public interface IProductService
     {
-        List<Product> GetProductsByCategory();
+        List<Product> GetAll();
         List<Product> GetProductsByCategory(int categoryId);
         void Add(Product product);
         void Update(Product product);

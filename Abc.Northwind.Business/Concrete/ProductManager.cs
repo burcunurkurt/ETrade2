@@ -26,7 +26,7 @@ namespace Abc.Northwind.Business.Concrete
             _productDal.Delete(new Product { ProductId=productId});
         }
 
-        public List<Product> GetProductsByCategory()
+        public List<Product> GetAll()
         {
             return _productDal.GetList();
         }
