@@ -2,10 +2,12 @@
 using Abc.Northwind.Business.Abstract;
 using Abc.Northwind.Entities.Concrete;
 using Abc.Northwind.MvcWebUI.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Abc.Northwind.MvcWebUI.Controllers
 {
+    [Authorize(Roles ="Admin")]
     public class AdminController : Controller
     {
         private readonly IProductService _productService;
